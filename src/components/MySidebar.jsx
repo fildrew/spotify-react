@@ -20,7 +20,7 @@ const MySidebar = () => {
     
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
-            navigate(`/search-page/${query}`);
+            navigate(`/search/${query}`);
         }
     };
 
@@ -45,7 +45,7 @@ const MySidebar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="off-nav-link" to={"/YourLibrary"}>
+                                        <Link className="off-nav-link" to={"/MusicLibrary"}>
                                             <BsFillCollectionPlayFill  className="me-2"/>
                                             Your Library
                                         </Link>
@@ -64,7 +64,7 @@ const MySidebar = () => {
                                             />
                                             <div className="input-group-append" style={{ marginBottom: "4%" }}>
                                                 <Link
-                                                to={"/search-page/" + query}
+                                                to={"/search/" + query}
                                                 className="btn btn-outline-secondary btn-sm py-2"
                                                 type="button"
                                                 id="button-addon1"

@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<Main />}/>
             <Route  path="/album" element={<MyTrackList/>}/>
             <Route path="/artist" element={<ArtistPage />}/>
-            <Route path="/search-page/:artistName" element={<Search/>} />
+            <Route path="/search/:artistName" element={<Search/>} />
             <Route path="/MusicLibrary" element={<MusicLibrary/>}/>
             <Route path="*" element={<PageNotFound/>}/>
             <Route path="/pageNonFound" element={<PageNotFound/>}/>

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-const SearchPage = () => {
+const Search = () => {
     const [artist, setArtist] = useState();
     const params = useParams();
 
@@ -55,4 +55,4 @@ const SearchPage = () => {
     );
 };
 
-export default SearchPage;
+export default Search;
